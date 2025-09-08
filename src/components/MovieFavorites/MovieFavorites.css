@@ -1,0 +1,48 @@
+.all-movie-favorite-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+
+  align-items: center;
+  place-items: center;
+  gap: 1.3rem;
+}
+
+.favorite-container {
+  margin: 1rem 0;
+}
+.favorite-container h2 {
+  margin-bottom: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .all-movie-favorite-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .favorite-container h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .all-movie-favorite-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .favorite-container h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .all-movie-favorite-card-container {
+    grid-template-columns: 1fr;
+  }
+  .favorite-container h2 {
+    font-size: 1.2rem;
+  }
+}

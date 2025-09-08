@@ -1,0 +1,107 @@
+.card-container {
+  width: 100%;
+  border: 1px solid #25303a;
+  border-radius: 24px;
+  overflow: hidden;
+  /* height: 556px; */
+  /* max-height: 500px; */
+  cursor: pointer;
+}
+
+.card-image-container {
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  padding: 0.8rem 1rem 0.8rem 0.8rem;
+  font-size: 0.88rem;
+  font-weight: bold;
+  height: 65px;
+}
+.card-image-container .card-image {
+  width: 100%;
+  /* min-height: 500px; */
+  object-fit: cover;
+}
+
+.card-movie-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1rem 1.1rem 0.8rem;
+
+  font-size: 0.8rem;
+  color: #a9bdc6;
+}
+
+.card-vote-average {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.card-vote-icon {
+  width: 1.1rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.card-favorite-toggle {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.heart-icon {
+  stroke: #a9bdc6;
+  size: 1rem;
+  width: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 870px) {
+  .card-movie-info {
+    font-size: 0.7rem;
+  }
+  .card-title {
+    font-size: 0.82rem;
+  }
+  .card-vote-icon {
+    width: 0.9rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .card-movie-info {
+    font-size: 0.8rem;
+  }
+  .card-title {
+    font-size: 0.87rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .card-title {
+    font-size: 0.8rem;
+  }
+
+  .card-movie-info {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-movie-info {
+    font-size: 0.74rem;
+  }
+  .card-title {
+    font-size: 0.9rem;
+  }
+  .card-vote-icon {
+    width: 0.9rem;
+  }
+}
