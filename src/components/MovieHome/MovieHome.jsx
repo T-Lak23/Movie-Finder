@@ -5,7 +5,8 @@ import MovieCard from "../MovieCard/MovieCard";
 import "./MovieHome.css";
 import MovieSort from "../MovieSort/MovieSort";
 import { FavoritesContext } from "../../context/FavoriteMovie";
-import Pagination from "../pagination/Pagination";
+// import Pagination from "../pagination/Pagination";
+import Pagination from "../Pagination/Pagination";
 import { useMovies } from "../../hook/useMovies";
 
 const MovieHome = () => {
